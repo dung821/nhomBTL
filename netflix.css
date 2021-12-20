@@ -1,0 +1,68 @@
+.Title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+}
+.question {
+  background-color: slategrey;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+.contentQuestion {
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#bs1 {
+  margin-left: 300px;
+}
+.bs3 {
+  padding-top: 30px;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+.Email {
+  font-size: x-large;
+  text-align: center;
+  padding-top: 30px;
+}
+.colorEmail {
+  color: white;
+  background-color: red;
+  border: none;
+  margin-bottom: 50px;
+}
+.hr {
+  height: 10px;
+}
+#contactus {
+  color: gray;
+  font-size: 15px;
+}
+.link1 {
+  color: gray;
+}
+.Vietnam {
+  font-size: small;
+  padding-top: 80px;
+}
+#select {
+  padding-top: 20px;
+}
+#gender1 {
+  background-color: black;
+  color: gray;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+}
+#footer {
+  height: 270px;
+}
