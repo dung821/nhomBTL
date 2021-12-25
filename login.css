@@ -1,6 +1,6 @@
 body,html {
+    margin :0;
     background-size:cover;
-    height: 100%;
     background-repeat: no-repeat;
     background-image:linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('images/VN-vi-20211213-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
 }
@@ -31,6 +31,9 @@ body,html {
     margin: 0 auto;
     background-color: rgba(0,0,0,.75);
   }
+.form-login{
+    margin-bottom: 90px;
+}
 .checkbox{
     font-weight: 400;
 }
@@ -85,7 +88,7 @@ body,html {
 .footer{
   margin-top: 0;
   background-color: rgba(0,0,0,.75);
-  height: 270px;
+  height: auto;
 }
 
 ul {
@@ -98,7 +101,9 @@ ul {
   padding-inline-start: 40px;
   list-style: none;
 }
-
+.link-footer{
+    font-size: 13px;
+}
 #gender1 {
   background-color: black;
   color: gray;
