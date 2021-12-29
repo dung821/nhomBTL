@@ -30,3 +30,10 @@
 .dropdown-toggle {
   outline: 0;
 }
+.bell{
+  height: 5px;
+  width: 5px;
+}
+.bell:hover{
+  
+}
