@@ -21,7 +21,7 @@ body{
     padding: 20px;
 }
 .row__poster:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .row__posters::-webkit-scrollbar{
     display: none;
@@ -120,10 +120,6 @@ body{
 .nav__black{
     width: 100%;
     height: auto;
-    background-color:rgb(18, 169, 23) ;
+    background-color:rgb(184, 196, 184) ;
 
-}
-#navbar {
-    color:red;
-    background-color: chartreuse;
 }
