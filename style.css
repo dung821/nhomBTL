@@ -36,16 +36,7 @@ body{
     color: rgb(255, 255, 255);
     margin-left: 20px;
 }
-/* phong nen chinh */
-.banner{
-    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ddd4085b-8ed5-416a-9b80-5085784ba0e9/d725cd1a-d850-45e8-9595-f4a314e6bdb2/VN-vi-20211206-popsignuptwoweeks-perspective_alpha_website_small.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    object-fit: contain;
-    height: 448px;
 
-}
 
 .banner__contents{
     margin-left: 30px;
@@ -122,4 +113,42 @@ body{
     height: auto;
     background-color:rgb(184, 196, 184) ;
 
+}
+#video_background {
+
+    position: absolute;
+    
+    bottom: 0px;
+    
+    right: 0px;
+    
+    min-width: 100%;
+    
+    min-height: 100%;
+    
+    width: auto;
+    
+    height: 448px;
+    
+    z-index: -1000;
+    
+    overflow: hidden;
+    
+    }
+    /* phong nen chinh */
+/* .banner{
+    
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ddd4085b-8ed5-416a-9b80-5085784ba0e9/d725cd1a-d850-45e8-9595-f4a314e6bdb2/VN-vi-20211206-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+
+} */
+h3{
+    color: rgb(247, 6, 6);
+    background-color:rgb(44, 44, 53);
+    width:100%;
+   
 }
