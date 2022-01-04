@@ -86,7 +86,7 @@
         <h2>NextFlixt clond</h2>
         <div class="row__posters">
             <div  class="row__poster" ><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
+            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./videobackgroud.mp4" type="video/mp4" controls></video></div>
             <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
             <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
             <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
