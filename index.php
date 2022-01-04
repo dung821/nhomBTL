@@ -23,9 +23,9 @@
         
         </video>
     <!-- nav bar home -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row__posters">
-            
+             -->
             <div class="col-md-6">
                 <div class="nav" id="nav">
                 <nav class="navbar navbar-expand-lg navbar-light ">
@@ -69,9 +69,9 @@
         <div class="banner__contents">
             <h1 class="banner__tile"> Bam vao day</h1>
             <div class="banner__buttons">
-                <button class="banner__button">play</button>
+                <button class="banner__button">XEM</button>
                 
-                <button class="banner__button">danh sach cua toi</button>
+                <button class="banner__button">THÔNG TIN</button>
             </div>
 <div class="banner__description">
                 to carry out the.....
@@ -82,7 +82,7 @@
 
     </div>
     <!--phiml-->
-    <div class="row">
+    <div class="row" style="margin-top:111px;">
         <h2>NextFlixt clond</h2>
         <div class="row__posters">
             <div  class="row__poster" ><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
