@@ -4,4 +4,3 @@
 </form>
 <?php require 'action.php';?>
 
-<?php require 'view.php';?>

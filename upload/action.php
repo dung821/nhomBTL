@@ -20,7 +20,7 @@ $maxsize = 104857600; // 100mb
 $name = $_FILES['file']['name'];
 $target_dir = "videos/";
 $target_file = $target_dir . $_FILES["file"]["name"];
-
+$link =  "videos/";
 $videoFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Định dạng mở rộng
@@ -35,7 +35,7 @@ echo "File quá lớn! Vui lòng upload file nhỏ hơn!";
 // Tiếp hành Upload
 if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
 // Ghi dữ liệu vào Database
-$query = "INSERT INTO videos(name,location) VALUES('".$name."','".$target_file."')";
+$query = "INSERT INTO videos(name,location,link) VALUES('".$name."','".$target_file."','".$link."')";
 
 $query = mysqli_query($con,$query);
 if($query)

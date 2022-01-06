@@ -83,16 +83,25 @@
     </div>
     <!--phiml-->
     <div class="row" style="margin-top:111px;">
-        <h2>NextFlixt clond</h2>
+        <h2>NextFlixt</h2>
         <div class="row__posters">
-            <div  class="row__poster" ><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./videobackgroud.mp4" type="video/mp4" controls></video></div>
+        <?php 
+             $conn = mysqli_connect('localhost','root','','btlweb');
+             if(!$conn){
+                 die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
+             }
+             $result = mysqli_query($conn,"SELECT * FROM videos WHERE ID = '1' " );
+             $row = mysqli_fetch_assoc($result);
+             $link = "".$row['LINK']."";
+        ?>
+            <div  class="row__poster" ><video height="auto" target="_blank" width="340px" src="<?php echo $link ?>" type="video/mp4" controls></video></div>
+            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./image/Khi bạn nắm quyền sinh tử trong tay - review phim Cuốn Sổ Tử Thần 1.mp4" type="video/mp4" controls></video></div>
+            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./image/3.mp4" type="video/mp4" controls></video></div>
             <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-            <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-
+<br>
         </div>
     </div>
+
 
   
      <!--phim hot-->
@@ -110,6 +119,10 @@
         </div>
     </div>
 
+
+
+
+    
      <!--phim hài-->
      <div class="row">
         <h2>Phim Hài</h2>
@@ -125,7 +138,7 @@
         </div>
     </div>
     <!--phim hành động-->
-    <div class="row">
+    <!-- <div class="row">
         <h2>Phim Hành Động</h2>
         <div class="row__posters">
             <div class="row__posters">
@@ -137,9 +150,9 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
     <!--phim hoat hinh-->
-    <div class="row">
+    <!-- <div class="row">
         <h2>Phim Hoạt Hình</h2>
         <div class="row__posters">
             <div class="row__posters">
@@ -151,9 +164,9 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
     <!--phimkinh dị-->
-    <div class="row">
+    <!-- <div class="row">
         <h2>Phim Kinh Dị</h2>
         <div class="row__posters">
             <div class="row__posters">
@@ -165,19 +178,19 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
     <!--phim kiếm hiệp-->
-    <div class="row">
+    <!-- <div class="row">
         <h2>Phim Kiếm Hiệp</h2>
         <div class="row__posters">
            
         </div>
-    </div>
+    </div> -->
     <!--phim viễn tưởng-->
-    <div class="row">
+    <!-- <div class="row">
         <h2>Phim Viễn Tưởng</h2>
        
-    </div>
+    </div> -->
     <!-- thanhh mo nav bar -->
 <script>
     const nav = document.getElementById('nav');
@@ -194,53 +207,64 @@
     </div> 
     <!--footer -->
       
-      <div class="footer">
-        <div class="container mt-5">
-          <div class="row text-center">
-            <div class="col-md-3 item-one">
-              
-              <div><i class="bi bi-twitter">    Footer Item </i></div>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
+      <!-- Bootsrap-->   
+    <div class="a">
+    <div class = "footer centered ">
+      <footer class="mt-3 py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center justify-content-lg-start">
+              <a class ="a-footer-top text-decoration-none" style="color: gray;" href="https://help.netflix.com/en/contactus">Bạn có câu hỏi? Liên hệ với chúng tôi.</a> 
+                <div class="link-footer col-lg-3 col-6">
+                      <ul class="list-unstyled">
+                            <li>
+                                <a href="https://help.netflix.com/en/node/412" class="link-primary text-decoration-none" style="color: gray;">Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-primary text-decoration-none" style="color: gray;">Tùy chọn cookie</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="link-footer col-lg-3 col-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://help.netflix.com/en/" class="link-primary text-decoration-none" style="color: gray;">Trung tâm trợ giúp</a>
+                            </li>
+                            <li>
+                                <a href="https://help.netflix.com/legal/corpinfo" class="link-primary text-decoration-none" style="color: gray;">Thông tin doanh nghiệp</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="link-footer col-lg-3 col-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://help.netflix.com/legal/termsofuse" class="link-primary text-decoration-none" style="color: gray;">Điều khoản sử dụng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-footer col-lg-3 col-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://help.netflix.com/legal/privacy" class="link-primary text-decoration-none" style="color: gray;">Quyền riêng tư</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                  <ul class="list-unstyled">
+                    <div class="tieng">
+                      <select id="gender1">
+                        <i class="fas fa-globe"></i>
+                        <option>English</option>
+                        <option>Việt Nam</option>
+                      </select>
+                    </div>
+                  </ul>
+                </div>
+
             </div>
-            <div class="col-md-3">
-              <div><i class="bi bi-twitter">    Footer Item </i></div>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-            </div>
-            <div class="col-md-3">
-              <div><i class="bi bi-twitter">    Footer Item </i></div>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-            </div>
-            <div class="col-md-3">
-              <div><i class="bi bi-twitter">    Footer Item </i></div>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-              <p><a href="">Item</a></p>
-            </div>
-            
-          </div>
-  
         </div>
-        <div class="end text-center pb-5">
-         <!-- <marquee>© Nguyễn Văn Dũng - Mai Văn Định - Hoàng Thị Hưng Hiền  - 2021.</marquee> -->
-        </body>
-      <!-- </div>
-        </div>
-<div class="ot-button-group-parent"><div class="ot-button-group">
-            <button class="save-preference-btn-handler onetrust-close-btn-handler">Lưu cài đặt</button>  </div>
-            <div class="ot-pc-footer-logo">
-                <a class="powered-by-logo" href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener" aria-label="Powered by One Trust" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg&quot;)"></a>
-            </div>
-        </div> -->
+    </footer>
+    </div>
  <!-- boottrap -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
