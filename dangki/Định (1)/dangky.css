@@ -1,0 +1,78 @@
+#img1 img {
+  background-color: white;
+  width: 45%;
+  color: rgb(190, 8, 8);
+}
+.dangnhap a {
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+.dangnhap {
+  padding-top: 35px;
+  text-align: right;
+}
+.step13 {
+  font-size: medium;
+}
+.Step1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.P1 {
+  font-size: larger;
+}
+.input input {
+  width: 100%;
+  height: 50px;
+}
+.checkbox {
+  margin-left: 12px;
+}
+.checkbox input {
+  width: 10%;
+  height: 30px;
+}
+.checkbox p {
+  font-size: 18px;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+.NextStep {
+  margin-top: 20px;
+  background-color: rgb(206, 15, 15);
+  border: none;
+  color: white;
+  font-size: x-large;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+#trochuot :hover {
+  background-color: red;
+}
+#footer {
+  margin-top: 100px;
+  padding-top: 15px;
+  height: 200px;
+  background-color: rgb(233, 233, 233);
+}
+.row1 {
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: larger;
+}
+#footer1 {
+  margin-left: 10px;
+  padding-top: 60px;
+}
+#language {
+  font-size: large;
+  width: 10%;
+  height: 40px;
+  margin-left: 22px;
+  border-radius: 5px;
+}
+#language option {
+  text-align: center;
+}
