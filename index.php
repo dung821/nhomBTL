@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+
     <!-- tên sv -->
     <div> <marquee><h3>Nguyễn Văn Dũng - Mai Văn Định - Hoàng Thị Hưng Hiền  - 61TH.</h3></marquee></div>
        <!-- back groud -->
@@ -22,6 +24,7 @@
         <source src="videobackgroud.mp4" type="video/mp4"/>
         
         </video>
+        
     <!-- nav bar home -->
     <!-- <div class="container-fluid">
         <div class="row__posters">
@@ -58,12 +61,7 @@
             </div>
         </div>
     </div>
-    <!-- avata, logo nextflixt -->
-<!-- <div class="nav" id="nav">
-<img src="image/netflix-logo.png" alt="" class="nav__logo">
     
-    <img src="image/netflix-avatar.png" alt="" class="nav__avata">
-</div> -->
     <!--header -->
     <div class="banner">
         <div class="banner__contents">
@@ -108,23 +106,42 @@
      <div class="row">
         <h2>Phim Hot</h2>
         <div class="row__posters">
-            <div class="row__posters">
-                <div  class="row__poster" ><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-                <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-                <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-                <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-                <div  class="row__poster"><video height="auto" target="_blank" width="340px" src="./video-1640698417.mp4" type="video/mp4" controls></video></div>
-    
-            </div>
+      
+ <video class="row__poster"  width="100px" height="340px" poster="https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/HTML5_video/Poster%20Video.png" controls>
+     <source src="https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/HTML5_video/video_vi_du.mp4" type="video/mp4">
+  </video>
+        <!-- thử -->
+<ul class="menu">
+  <li>
+    <a href="#">adjsdjádjsa</a>
+    <ul>
+      <li><a href="#">Child Link</a></li>
+      <li><a href="#">Child Link</a></li>
+      <li><a href="#">Child Link</a></li>
+      <li><a href="#">Child Link</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 
-
+<!-- thử2 -->
 
 
     
      <!--phim hài-->
-     <div class="row">
+     <!-- <div class="row">
         <h2>Phim Hài</h2>
         <div class="row__posters">
             <div class="row__posters">
@@ -136,7 +153,7 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
     <!--phim hành động-->
     <!-- <div class="row">
         <h2>Phim Hành Động</h2>
@@ -179,18 +196,7 @@
             </div>
         </div>
     </div> -->
-    <!--phim kiếm hiệp-->
-    <!-- <div class="row">
-        <h2>Phim Kiếm Hiệp</h2>
-        <div class="row__posters">
-           
-        </div>
-    </div> -->
-    <!--phim viễn tưởng-->
-    <!-- <div class="row">
-        <h2>Phim Viễn Tưởng</h2>
-       
-    </div> -->
+   
     <!-- thanhh mo nav bar -->
 <script>
     const nav = document.getElementById('nav');
@@ -265,6 +271,8 @@
         </div>
     </footer>
     </div>
+
+    
  <!-- boottrap -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

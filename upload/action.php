@@ -35,7 +35,7 @@ echo "File quá lớn! Vui lòng upload file nhỏ hơn!";
 // Tiếp hành Upload
 if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
 // Ghi dữ liệu vào Database
-$query = "INSERT INTO videos(name,location,link) VALUES('".$name."','".$target_file."','".$link."')";
+$query = "INSERT INTO videos(name,location) VALUES('".$name."','".$target_file."','".$name."','".$name."')";
 
 $query = mysqli_query($con,$query);
 if($query)
